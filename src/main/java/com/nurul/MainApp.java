@@ -26,6 +26,7 @@ public class MainApp extends Application {
         BorderPane root = loader.load();
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
+        primaryStage.setTitle("Welcome to Sistem Akademik");
         primaryStage.show();
     }
 

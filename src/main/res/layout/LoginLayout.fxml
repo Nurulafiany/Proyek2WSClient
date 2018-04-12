@@ -31,7 +31,7 @@
                            <children>
                               <ImageView fitHeight="107.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../Lambang-Universitas_Cover-Karya-Tulis-Ilmiah1.png" />
+                                    <Image url="@../../../../assets/Lambang-Universitas_Cover-Karya-Tulis-Ilmiah1.png" />
                                  </image>
                               </ImageView>
                            </children>
