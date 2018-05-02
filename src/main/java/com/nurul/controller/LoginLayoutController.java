@@ -11,7 +11,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 
 /**
  * FXML Controller class
@@ -26,13 +28,22 @@ public class LoginLayoutController implements Initializable {
     private TextField txtUsername;
     @FXML
     private TextField txtPassword;
+    @FXML
+    private Label lblUsername;
+    @FXML
+    private Label lblPassword;
+    @FXML
+    private ImageView imgMarnat;
+    @FXML
+    private Label lblLogin;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+//        imgMarnat.setImage(new Image("8076-200.png"));
+
     }
 
     @FXML

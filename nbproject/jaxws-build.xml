@@ -16,22 +16,158 @@
             <classpath path="${libs.jaxws21.classpath}"/>
         </taskdef>
     </target>
-    <target name="wsimport-client-Proyek2WebService" depends="wsimport-init">
-        <mkdir dir="${build.generated.dir}/jax-wsCache/Proyek2WebService"/>
-        <property name="wsdl-Proyek2WebService" location="xml-resources/web-service-references/Proyek2WebService/wsdl/localhost_65149/Proyek2JavaWS/Proyek2WebService.wsdl"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Proyek2WebService" destdir="${build.generated.dir}/jax-wsCache/Proyek2WebService" wsdl="${wsdl-Proyek2WebService}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:65149/Proyek2JavaWS/Proyek2WebService?WSDL" xnocompile="true" xendorsed="true">
-            <depends file="${wsdl-Proyek2WebService}"/>
-            <produces dir="${build.generated.dir}/jax-wsCache/Proyek2WebService"/>
+    <target name="wsimport-client-DepartmentWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/DepartmentWS"/>
+        <property name="wsdl-DepartmentWS" location="xml-resources/web-service-references/DepartmentWS/wsdl/localhost_65149/Proyek2JavaWS/DepartmentWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/DepartmentWS" destdir="${build.generated.dir}/jax-wsCache/DepartmentWS" wsdl="${wsdl-DepartmentWS}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:65149/Proyek2JavaWS/DepartmentWS?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-DepartmentWS}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/DepartmentWS"/>
         </wsimport>
         <copy todir="${build.generated.sources.dir}/jax-ws">
-            <fileset dir="${build.generated.dir}/jax-wsCache/Proyek2WebService">
+            <fileset dir="${build.generated.dir}/jax-wsCache/DepartmentWS">
                 <include name="**/*.java"/>
             </fileset>
         </copy>
     </target>
-    <target name="wsimport-client-clean-Proyek2WebService" depends="-init-project">
-        <delete dir="${build.generated.dir}/jax-wsCache/Proyek2WebService"/>
+    <target name="wsimport-client-clean-DepartmentWS" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/DepartmentWS"/>
         <delete dir="${build.generated.sources.dir}/jax-ws/com/nurul/ws"/>
     </target>
-    <target name="wsimport-client-generate" depends="wsimport-client-Proyek2WebService"/>
+    <target name="wsimport-client-FacultyWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/FacultyWS"/>
+        <property name="wsdl-FacultyWS" location="xml-resources/web-service-references/FacultyWS/wsdl/localhost_65149/Proyek2JavaWS/FacultyWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/FacultyWS" destdir="${build.generated.dir}/jax-wsCache/FacultyWS" wsdl="${wsdl-FacultyWS}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:65149/Proyek2JavaWS/FacultyWS?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-FacultyWS}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/FacultyWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/FacultyWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-FacultyWS" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/FacultyWS"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/nurul/ws"/>
+    </target>
+    <target name="wsimport-client-RoomWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/RoomWS"/>
+        <property name="wsdl-RoomWS" location="xml-resources/web-service-references/RoomWS/wsdl/localhost_65149/Proyek2JavaWS/RoomWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/RoomWS" destdir="${build.generated.dir}/jax-wsCache/RoomWS" wsdl="${wsdl-RoomWS}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:65149/Proyek2JavaWS/RoomWS?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-RoomWS}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/RoomWS"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/RoomWS">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-RoomWS" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/RoomWS"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/nurul/ws"/>
+    </target>
+    <target name="wsimport-client-Semester" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Semester"/>
+        <property name="wsdl-Semester" location="xml-resources/web-service-references/Semester/wsdl/localhost_65149/Proyek2JavaWS/Semester.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Semester" destdir="${build.generated.dir}/jax-wsCache/Semester" wsdl="${wsdl-Semester}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:65149/Proyek2JavaWS/Semester?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-Semester}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Semester"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Semester">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Semester" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/Semester"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/nurul/ws"/>
+    </target>
+    <target name="wsimport-client-roleLecturer" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/roleLecturer"/>
+        <property name="wsdl-roleLecturer" location="xml-resources/web-service-references/roleLecturer/wsdl/localhost_65149/Proyek2JavaWS/roleLecturer.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/roleLecturer" destdir="${build.generated.dir}/jax-wsCache/roleLecturer" wsdl="${wsdl-roleLecturer}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:65149/Proyek2JavaWS/roleLecturer?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-roleLecturer}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/roleLecturer"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/roleLecturer">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-roleLecturer" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/roleLecturer"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/nurul/ws"/>
+    </target>
+    <target name="wsimport-client-DepartmentWS_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/DepartmentWS_1"/>
+        <property name="wsdl-DepartmentWS_1" location="xml-resources/web-service-references/DepartmentWS_1/wsdl/localhost_65149/Proyek2JavaWS/DepartmentWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/DepartmentWS_1" destdir="${build.generated.dir}/jax-wsCache/DepartmentWS_1" wsdl="${wsdl-DepartmentWS_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:65149/Proyek2JavaWS/DepartmentWS?wsdl" xnocompile="true" xendorsed="true" package="com.nurul.ws">
+            <depends file="${wsdl-DepartmentWS_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/DepartmentWS_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/DepartmentWS_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-DepartmentWS_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/DepartmentWS_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/nurul/ws"/>
+    </target>
+    <target name="wsimport-client-RoomWS_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/RoomWS_1"/>
+        <property name="wsdl-RoomWS_1" location="xml-resources/web-service-references/RoomWS_1/wsdl/localhost_65149/Proyek2JavaWS/RoomWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/RoomWS_1" destdir="${build.generated.dir}/jax-wsCache/RoomWS_1" wsdl="${wsdl-RoomWS_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:65149/Proyek2JavaWS/RoomWS?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-RoomWS_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/RoomWS_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/RoomWS_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-RoomWS_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/RoomWS_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/nurul/ws"/>
+    </target>
+    <target name="wsimport-client-RoomWS_2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/RoomWS_2"/>
+        <property name="wsdl-RoomWS_2" location="xml-resources/web-service-references/RoomWS_2/wsdl/localhost_65149/Proyek2JavaWS/RoomWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/RoomWS_2" destdir="${build.generated.dir}/jax-wsCache/RoomWS_2" wsdl="${wsdl-RoomWS_2}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:65149/Proyek2JavaWS/RoomWS?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-RoomWS_2}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/RoomWS_2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/RoomWS_2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-RoomWS_2" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/RoomWS_2"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/nurul/ws"/>
+    </target>
+    <target name="wsimport-client-DepartmentWS_2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/DepartmentWS_2"/>
+        <property name="wsdl-DepartmentWS_2" location="xml-resources/web-service-references/DepartmentWS_2/wsdl/localhost_65149/Proyek2JavaWS/DepartmentWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/DepartmentWS_2" destdir="${build.generated.dir}/jax-wsCache/DepartmentWS_2" wsdl="${wsdl-DepartmentWS_2}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:65149/Proyek2JavaWS/DepartmentWS?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-DepartmentWS_2}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/DepartmentWS_2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/DepartmentWS_2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-DepartmentWS_2" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/DepartmentWS_2"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/nurul/ws"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-DepartmentWS, wsimport-client-FacultyWS, wsimport-client-RoomWS, wsimport-client-Semester, wsimport-client-roleLecturer, wsimport-client-DepartmentWS_1, wsimport-client-RoomWS_1, wsimport-client-RoomWS_2, wsimport-client-DepartmentWS_2"/>
 </project>

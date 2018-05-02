@@ -22,7 +22,7 @@ public class MainApp extends Application {
         FXMLLoader loader = new FXMLLoader();
         loader.
                 setLocation(MainApp.class.
-                        getResource("/layout/LoginLayout.fxml"));
+                        getResource("/layout/AdminLayout.fxml"));
         BorderPane root = loader.load();
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);

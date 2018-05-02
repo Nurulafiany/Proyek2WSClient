@@ -29,16 +29,15 @@
                      <children>
                         <HBox alignment="CENTER" prefHeight="107.0" prefWidth="355.0">
                            <children>
-                              <ImageView fitHeight="107.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="imgMarnat" fitHeight="107.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../assets/Lambang-Universitas_Cover-Karya-Tulis-Ilmiah1.png" />
-                                 </image>
-                              </ImageView>
+                                    <Image url="@../image/Lambang-Universitas_Cover-Karya-Tulis-Ilmiah1.png" />
+                                 </image></ImageView>
                            </children>
                         </HBox>
                      </children>
                   </HBox>
-                  <Label text="Username" GridPane.rowIndex="1">
+                  <Label fx:id="lblUsername" text="Label" GridPane.rowIndex="1">
                      <GridPane.margin>
                         <Insets left="5.0" />
                      </GridPane.margin>
@@ -46,7 +45,7 @@
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </Label>
-                  <Label text="Password" GridPane.rowIndex="2">
+                  <Label fx:id="lblPassword" text="Label" GridPane.rowIndex="2">
                      <padding>
                         <Insets left="5.0" />
                      </padding>
@@ -56,7 +55,7 @@
                   </Label>
                   <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <children>
-                        <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#LoginOnAction" text="Login">
+                        <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#LoginOnAction" text="Button">
                            <HBox.margin>
                               <Insets right="5.0" top="10.0" />
                            </HBox.margin>
@@ -74,12 +73,7 @@
                         <Insets left="5.0" right="5.0" />
                      </GridPane.margin>
                   </TextField>
-                  <TextField fx:id="txtPassword" prefHeight="42.0" prefWidth="373.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                     <GridPane.margin>
-                        <Insets left="5.0" right="5.0" />
-                     </GridPane.margin>
-                  </TextField>
-                  <Label prefHeight="79.0" prefWidth="83.0" text="LOGIN">
+                  <Label fx:id="lblLogin" prefHeight="79.0" prefWidth="83.0" text="Label">
                      <padding>
                         <Insets left="5.0" />
                      </padding>
@@ -87,6 +81,7 @@
                         <Font name="Berlin Sans FB Bold" size="23.0" />
                      </font>
                   </Label>
+                  <PasswordField fx:id="txtPassword" prefHeight="40.0" prefWidth="373.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                </children>
             </GridPane>
          </children>
